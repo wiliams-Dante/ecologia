@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f1115">
+    <meta name="description" content="Investigación universitaria de la UNSA sobre el impacto del uso de recursos en aparatos eléctricos.">
+    <title>Impacto del uso de recursos - UNSA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#seccion-grafo">Saltar al grafo</a>
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <nav id="navbar" aria-label="Navegación principal">
+        <div class="nav-logo">UNSA | Ing. Electrónica</div>
+        <div class="nav-titulo">Impacto de los recursos en aparatos eléctricos</div>
+    </nav>
+
+    <section id="portada">
+        <div class="portada-contenido">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-unsa-eaXWEcojur6FSgh1bNSzBKcM4YRHEN.png" alt="Logo de la Universidad Nacional de San Agustín de Arequipa" class="logo-portada">
+            <h2 class="universidad">UNIVERSIDAD NACIONAL DE SAN AGUSTÍN DE AREQUIPA</h2>
+            <h3 class="facultad">Facultad de Ingeniería de Producción y Servicios</h3>
+            <h4 class="escuela">Escuela Profesional de Ingeniería Electrónica</h4>
+            
+            <div class="tipo-trabajo">TRABAJO DE INVESTIGACIÓN FORMATIVA</div>
+            
+            <h1 class="titulo-principal"><span id="typewriter"></span><span id="cursor" aria-hidden="true">|</span></h1>
+            <div class="info-academica">
+                <div class="docente-box"><p><span>Docente:</span> Dra. Selma Concepción Quille Vargas</p></div>
+                <div class="integrantes-box"><p><span>Integrantes:</span></p>
+                    <ul class="lista-integrantes">
+                        <li>Rodrigo José Mamani Lampa</li><li>James Johan Huayhua Huamani</li><li>Anghely Yamilet Nuñuvero Garrido</li>
+                        <li>Johan Leonardo</li><li>Jhossias Galyleo Puam Yerba</li><li>Wiliams Yeferson Taipe Huanca</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        
+<section class="seccion-texto" id="investigacion">
+    <div class="contenedor-investigacion">
+
+
+    <div class="tarjeta-investigacion">
+        <h2 class="subtitulo">Problema y Objetivos de Investigación</h2>
+
+        <p class="texto-investigacion">
+            <strong>Problema:</strong> ¿Qué impacto ambiental genera el ciclo de vida en la indsutria de los aparatos eléctricos en el Perú, desde la extracción de sus materiales hasta su disposición final?
+        </p>
+
+        <p class="texto-investigacion">
+            <strong>Objetivo general:</strong> Analizar el impacto ambiental y el consumo de recursos asociados al ciclo de vida de los aparatos eléctricos en el Perú, desde la extracción de materias primas hasta su disposición final, considerando el contexto energético nacional.
+        </p>
+
+        <p class="texto-investigacion">
+            <strong>Objetivos específicos:</strong>
+        </p>
+
+        <ul class="lista-conclusiones">
+            <li>Identificar los impactos ambientales generados por la extracción de cobre y aluminio, especialmente en el consumo de agua y la transformación del territorio.</li>
+
+            <li>Examinar los procesos de manufactura de los aparatos eléctricos, considerando la fundición, refinación, ensamblaje y sus requerimientos energéticos.</li>
+
+
+            <li>Evaluar los impactos asociados al fin de vida de los aparatos eléctricos, considerando la obsolescencia y la recuperación de materiales.</li>
+        </ul>
+    </div>
+
+
+        <div class="tarjeta-investigacion">
+            <h2 class="subtitulo">Las 4 fases del ciclo de vida</h2>
+
+            <p class="texto-investigacion">
+                El análisis comprende cuatro fases principales. Cada una representa una etapa del recorrido de los materiales y los aparatos eléctricos:
+            </p>
+
+            <div class="contenedor-rutas">
+
+                <article class="ruta-card etapa-rojo phase-reveal" data-phase="1">
+                    <h3>🔴 Extracción</h3>
+                    <p>
+                        Obtención de cobre y aluminio, considerando el consumo de agua y la transformación del territorio.
+                    </p>
+                </article>
+
+                <article class="ruta-card etapa-naranja phase-reveal" data-phase="2">
+                    <h3>🟠 Manufactura</h3>
+                    <p>
+                        Fundición, refinación y ensamblaje de materiales para fabricar los aparatos eléctricos.
+                    </p>
+                </article>
+
+                <article class="ruta-card etapa-violeta phase-reveal" data-phase="3">
+                    <h3>🟣 Uso</h3>
+                    <p>
+                        Consumo de electricidad durante la vida útil de los aparatos y su relación con la matriz energética peruana.
+                    </p>
+                </article>
+
+                <article class="ruta-card etapa-verde phase-reveal" data-phase="4">
+                    <h3>🟢 Fin de vida</h3>
+                    <p>
+                        Generación de residuos electrónicos (RAEE), obsolescencia, contaminación y recuperación de materiales.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="marco-transversal">
+                <h3>⚪ Contexto Energético</h3>
+                <p>
+                    Complementa las cuatro fases mediante el análisis de la transición energética y los criterios ambientales que permiten comprender los impactos del ciclo de vida.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+        <section class="launcher-section" id="seccion-grafo" aria-label="Explorador del grafo">
+            <div class="graph-launcher-card">
+                <div class="graph-launcher-copy">
+                    <span class="graph-launcher-eyebrow">MAPA INTERACTIVO · 17 CONCEPTOS</span>
+                    <h2>Explora el ciclo de vida de los aparatos eléctricos</h2>
+                </div>
+                <div class="graph-launcher-action">
+                    <button type="button" id="abrir-grafo" class="btn-open-graph">
+                        <span aria-hidden="true">⛶</span> Abrir grafo interactivo
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div id="graph-modal" class="graph-modal" hidden aria-hidden="true">
+            <div class="graph-modal-shell" role="dialog" aria-modal="true" aria-labelledby="graph-modal-title">
+                <header class="graph-modal-header">
+                    <div>
+                        <span class="graph-modal-eyebrow">MODO EXPOSICIÓN</span>
+                        <h2 id="graph-modal-title">Grafo interactivo del ciclo de vida</h2>
+                    </div>
+                    <button type="button" id="cerrar-grafo" class="btn-close-graph" aria-label="Salir del grafo y volver a la página">
+                        <span aria-hidden="true">×</span> Salir del grafo
+                    </button>
+                </header>
+                <section class="contenedor-principal graph-modal-content" aria-label="Área del grafo">
+                    <div class="columna-grafo">
+                <div class="graph-card">
+                    
+                    <div id="controles-grafo" aria-label="Controles del grafo">
+                        <button type="button" id="btn-generar-grafo" class="btn-generar">⚡ Generar grafo</button>
+
+                        <div class="control-group zoom-controls" aria-label="Zoom y vista">
+                            <button type="button" id="zoom-in" aria-label="Acercar" title="Acercar">+</button>
+                            <button type="button" id="zoom-out" aria-label="Alejar" title="Alejar">−</button>
+                            <button type="button" id="reset-graph" aria-label="Centrar vista sin reiniciar la exposición" title="Centrar vista (conserva nodos y ruta)">⌖</button>
+                        </div>
+                        <div class="slider-control">
+                            <label for="slider-distancia"><span>Separación del grafo</span><output id="distancia-valor">100%</output></label>
+                            <input type="range" id="slider-distancia" min="65" max="150" value="100" step="5">
+                        </div>
+                        <div class="slider-control">
+                            <label for="slider-tamano"><span>Tamaño de nodos</span><output id="tamano-valor">16</output></label>
+                            <input type="range" id="slider-tamano" min="8" max="26" value="16" step="1">
+                        </div>
+                        <div class="slider-control">
+                            <label for="slider-repulsion"><span>Repulsión entre nodos</span><output id="repulsion-valor">100%</output></label>
+                            <input type="range" id="slider-repulsion" min="35" max="160" value="100" step="5">
+                        </div>
+                    </div>
+
+                    <div id="panel-grafo">
+                        <canvas id="grafo-2d" aria-label="Grafo bidimensional interactivo." role="img"></canvas>
+
+                        <div id="leyenda-grafo" class="leyenda-grafo">
+                            <div class="leyenda-titulo">RUTA DE EXPOSICIÓN</div>
+                            <div class="leyenda-item"><span class="color-rojo"></span> Extracción</div>
+                            <div class="leyenda-item"><span class="color-naranja"></span> Manufactura</div>
+                            <div class="leyenda-item"><span class="color-violeta"></span> Uso</div>
+                            <div class="leyenda-item"><span class="color-verde"></span> Fin de Vida</div>
+                            <div class="leyenda-item"><span class="color-blanco"></span> Contexto Energético</div>
+                        </div>
+
+                        <div class="graph-heading">
+                            <span class="graph-kicker">MAPA DE CONCEPTOS</span>
+                            <span id="graph-status" role="status">17 conceptos · dinámico</span>
+                        </div>
+
+                        <!-- PANEL 1: TEXTO -->
+                        <div id="panel-flotante" class="panel-flotante" hidden aria-live="polite">
+                            <button type="button" id="cerrar-panel" class="cerrar-panel" aria-label="Cerrar panel" title="Cerrar">×</button>
+
+                            <div class="panel-header">
+                                <span class="panel-etapa" id="panel-etapa">ETAPA 1 · EXTRACCIÓN</span>
+                            </div>
+
+                            <h3 class="panel-titulo" id="info-titulo">Explora el grafo</h3>
+
+                            <div class="panel-metrica">
+                                <span class="metrica-numero">—</span>
+                                <span class="metrica-texto">Métrica de impacto</span>
+                                <p class="metrica-explicacion" id="metrica-explicacion">Selecciona un nodo para ver la explicación de su métrica.</p>
+                            </div>
+
+                            <div class="panel-seccion">
+                                <span class="panel-seccion-label">¿QUÉ ES?</span>
+                                <p class="panel-texto" id="info-texto">Selecciona un concepto para consultar su información.</p>
+                            </div>
+
+                            <div class="panel-seccion">
+                                <span class="panel-seccion-label">¿POR QUÉ ES IMPORTANTE?</span>
+                                <p class="panel-contexto" id="panel-contexto">Aquí aparecerá el rol de este concepto en el ciclo de vida.</p>
+                            </div>
+
+                            <div class="panel-dato-clave" id="panel-dato-clave">
+                                <span class="dato-clave-label">💡 DATO CLAVE</span>
+                                <p class="dato-clave-texto">Aquí aparecerá el dato que deben memorizar.</p>
+                            </div>
+
+                            <div class="panel-fuente" id="info-fuente"><strong>Fuente:</strong> [Selecciona un nodo]</div>
+                        </div>
+
+                        <!-- PANEL 2: IMAGEN -->
+                        <div id="panel-imagen-flotante" class="panel-imagen-flotante" hidden>
+                            <img id="panel-imagen" src="" alt="Imagen referencial">
+                        </div>
+
+                    </div>
+                </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <section class="seccion-texto" id="conclusiones-bibliografia">
+            <div class="contenedor-investigacion">
+
+                <div class="tarjeta-investigacion">
+                    <h2 class="subtitulo">Conclusiones</h2>
+                        <div class="conclusion-stat" aria-label="Impacto de recursos e industrial del cobre">
+                            <div class="conclusion-stat-number">
+                                <span class="conclusion-stat-label">HUELLA HÍDRICA DEL COBRE · POR TONELADA</span>
+                                <strong><span class="counter-value" data-count-to="9.3" data-decimals="1">9.3</span> <small>millones de litros de agua</small></strong>
+                            </div>
+                            <div class="conclusion-stat-detail">
+                                <div class="conclusion-stat-rate"><strong><span class="counter-value" data-count-to="60" data-decimals="0">60</span>%</strong><span>de las emisiones del cobre se generan en la fundición y refinación</span></div>
+                                <div class="conclusion-stat-bar" role="img" aria-label="60 por ciento de las emisiones del cobre provienen de la fundición y refinación">
+                                    <span></span>
+                                </div>
+                                <p>La extracción consume el agua; el proceso industrial concentra las emisiones. Ambos ocurren antes de que el aparato llegue al usuario. Fuente: <a href="https://copperalliance.org/" target="_blank" rel="noopener">ICA – Perfil Medioambiental del Cobre (2023)</a>.</p>
+                            </div>
+                        </div>
+
+                        <div class="conclusion-grid">
+                            <article class="conclusion-card conclusion-extraccion">
+                                <span class="conclusion-index">01 · MATERIAS PRIMAS</span>
+                                <h3>El impacto comienza en la extracción</h3>
+                                <p>Obtener cobre y aluminio demanda agua, energía y transformación del territorio. La huella hídrica del cobre alcanza 9.3 millones de litros por tonelada. El impacto existe antes de que el aparato llegue al usuario.</p>
+                            </article>
+                            <article class="conclusion-card conclusion-manufactura">
+                                <span class="conclusion-index">02 · PROCESO INDUSTRIAL</span>
+                                <h3>La fundición y refinación concentran el impacto</h3>
+                                <p>Transformar el mineral en metal exige temperaturas de 1,200 °C y grandes cantidades de electricidad. La fundición y refinación del cobre generan 3,558 kg de CO₂ por tonelada y concentran el 60% de sus emisiones.</p>
+                            </article>
+                            <article class="conclusion-card conclusion-uso">
+                                <span class="conclusion-index">03 · ETAPA DE USO</span>
+                                <h3>La electricidad también tiene una huella</h3>
+                                <p>El impacto del consumo depende de cómo se genera la electricidad. La matriz energética conecta el uso cotidiano de los aparatos con los recursos y emisiones del sistema eléctrico.</p>
+                            </article>
+                            <article class="conclusion-card conclusion-reciclaje">
+                                <span class="conclusion-index">04 · ECONOMÍA CIRCULAR</span>
+                                <h3>Recuperar materiales reduce nueva extracción</h3>
+                                <p>La reparación, reutilización y recuperación formal de metales permiten aprovechar recursos ya extraídos y disminuir la necesidad de materias primas vírgenes —y con ello, el consumo de agua y energía de la minería.</p>
+                            </article>
+                        </div>
+                    <div class="conclusion-final">
+                        <span>IDEA CENTRAL</span>
+                        <p>El impacto ambiental de un aparato eléctrico no se limita a la electricidad que consume: se construye a lo largo de todo su ciclo de vida, desde la extracción de materiales hasta la gestión de sus residuos.</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-investigacion">
+                    <h2 class="subtitulo">Bibliografía Principal </h2>
+                    <ul class="lista-bibliografia">
+                        <li>Baldé, C. P., et al. (2024). <em>The Global E-waste Monitor 2024</em>. UNITAR. <a href="https://ewastemonitor.info/the-global-e-waste-monitor-2024/" target="_blank" rel="noopener">https://ewastemonitor.info/...</a></li>
+                        <li>CooperAcción. (2024). <em>Transición justa: El cobre para la transición energética y el corredor del sur andino</em>. <a href="https://cooperaccion.org.pe/wp-content/uploads/2024/06/TEJ-y-corredor-minero.pdf" target="_blank" rel="noopener">https://cooperaccion.org.pe/...</a></li>
+                        <li>Gusukuma, M., Kahhat, R., & Cáceres, K. (2022). Evolución del stock de equipos eléctricos en Perú. <em>Journal of Industrial Ecology</em>. <a href="https://doi.org/10.1111/jiec.13231" target="_blank" rel="noopener">https://doi.org/10.1111/jiec.13231</a></li>
+                        <li>International Copper Association (ICA). (2023). <em>Perfil Medioambiental del Cobre Global 2023</em>. <a href="https://internationalcopper.org/wp-content/uploads/2023/08/ICA-LCI-SPANISH-GlobalSummary-202306-R2.pdf" target="_blank" rel="noopener">Descargar PDF oficial</a></li>
+                        <li>International Energy Agency (IEA). (2021). <em>The Role of Critical Minerals in Clean Energy Transitions</em>. <a href="https://www.iea.org/reports/the-role-of-critical-minerals-in-clean-energy-transitions" target="_blank" rel="noopener">https://www.iea.org/...</a></li>
+                        <li>Ministerio de Energía y Minas (MINEM). (2025). <em>Prospectiva del Sector Eléctrico a nivel nacional - Diciembre 2025</em>. <a href="https://www.gob.pe/minem" target="_blank" rel="noopener">https://www.gob.pe/minem</a></li>
+                        <li>Northey, S., Haque, N., & Mudd, G. (2014). Using sustainability reporting to assess the environmental footprint of copper mining. <em>Journal of Cleaner Production</em>. <a href="https://doi.org/10.1016/j.jclepro.2012.09.027" target="_blank" rel="noopener">https://doi.org/10.1016/j.jclepro.2012.09.027</a></li>
+                        <li>Osinergmin. (2024). <em>Anuario Ejecutivo de Electricidad 2024</em>. <a href="https://www.osinergmin.gob.pe" target="_blank" rel="noopener">https://www.osinergmin.gob.pe</a></li>
+                        <li>World Resources Institute (WRI). (2023). <em>Critical Minerals Are Essential for the Energy Transition. But They Come with Water Risks</em>. <a href="https://www.wri.org/insights/critical-minerals-mining-water-impacts" target="_blank" rel="noopener">https://www.wri.org/...</a></li>
+                        <li>Banco Mundial. (2023). <em>Plan de Gestión de Residuos de Aparatos Eléctricos y Electrónicos (RAEE)</em>. <a href="https://documents1.worldbank.org/curated/en/099112223094559740/pdf/P1797510c095d40020b88605478e1ced261.pdf" target="_blank" rel="noopener">Descargar PDF oficial</a></li>
+                        <li>Deniau, Y., Llano, M., Ferrari, L. y Flores Lot, C. (2024). <em>El cobre como mineral estratégico y el papel de México</em>. Pronace-ecc-Conahcyt. <a href="https://secihti.mx/wp-content/uploads/pronaces/energia_cambio_climatico/materiales-de-int/Cuaderno_11_Cobre.pdf" target="_blank" rel="noopener">Descargar PDF oficial</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"><div class="footer-contenido"><p><strong>Hecho por:</strong> Grupo de Investigación Formativa - UNSA 2026</p><p class="footer-autores">Taipe Huanca, Wiliams Yeferson</p><p class="footer-copy">© 2024 Universidad Nacional de San Agustín de Arequipa.</p></div></footer>
+</body>
+</html>
