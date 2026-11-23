@@ -197,7 +197,7 @@ const fichasNodos = {
     metrica: '9.3M L',
     textoMetrica: 'Agua por tonelada de cobre',
     metricaExplicacion: 'Producir una tonelada de cobre refinado consume 9.3 millones de litros de agua, equivalente a llenar 3.7 piscinas olímpicas.',
-    texto: 'Primera etapa del ciclo: extrae el mineral de cobre mediante voladura, trituración y molienda a cielo abierto a partir de bajas concentraciones.',
+    texto: 'Actividad extractiva que inicia el ciclo: obtiene minerales de la corteza terrestre mediante voladura, trituración y molienda a cielo abierto.',
     contexto: 'Concentra el mayor impacto hídrico y territorial al extraer agua de cuencas bajo estrés y alterar ecosistemas.',
     datoClave: 'Perú es uno de los 5 mayores productores de cobre del mundo. La mina a cielo abierto más profunda del país supera los 1,000 metros.',
     fuente: 'ICA - Perfil Medioambiental del Cobre (2023) · Northey et al. (2014)',
@@ -220,7 +220,7 @@ const fichasNodos = {
     textoMetrica: 'Energía por tonelada de aluminio',
     metricaExplicacion: 'Producir una tonelada de aluminio primario requiere entre 17 y 20 MWh, siendo uno de los metales con mayor huella energética.',
     texto: 'Se extrae de la bauxita. Más ligero y barato que el cobre, se emplea en carcasas de refrigeradoras, lavadoras y rotores de motores.',
-    contexto: 'Su extracción y refinación (Proceso Bayer) son muy intensivas en energía; su huella de carbono depende de cómo se genere esa electricidad.',
+    contexto: 'Su extracción y refinación son muy intensivas en energía; su huella de carbono depende de cómo se genere esa electricidad.',
     datoClave: 'El aluminio es 100% reciclable sin perder sus propiedades. Reciclarlo ahorra el 95% de la energía necesaria para producirlo desde cero.',
     fuente: 'International Aluminium Institute · UPC',
     imagen: '3.jpg'
