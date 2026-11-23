@@ -1,4 +1,4 @@
-const fichasNodos = {
+/*const fichasNodos = {
   1: {
     titulo: 'Minería',
     metrica: '9.3M L',
@@ -186,6 +186,199 @@ const fichasNodos = {
     metricaExplicacion: 'Recuperar una tonelada de cobre de los RAEE consume 10 veces menos energía y agua que extraerla de la mina. La minería urbana convierte los residuos en "minas" ricas en metales.',
     texto: 'La minería urbana es la extracción de metales de los RAEE, edificios viejos o infraestructura obsoleta. Un RAEE de refrigeradora contiene cobre al 60% de pureza (vs. 0.5% en la mina).',
     contexto: 'La minería urbana CIERRA el ciclo: sustituye la extracción primaria por recuperación secundaria. Es la alternativa más eficiente para reducir el impacto total del ciclo de vida.',
+    datoClave: 'Reciclar una tonelada de RAEE de cobre evita 3.5 t de CO₂ y ahorra 9.3 millones de litros de agua.',
+    fuente: 'Pascuas Rengifo - Implicaciones socioambientales de los aparatos eléctricos',
+    imagen: '17.jpg'
+  }
+};*/
+const fichasNodos = {
+  1: {
+    titulo: 'Minería',
+    metrica: '9.3M L',
+    textoMetrica: 'Agua por tonelada de cobre',
+    metricaExplicacion: 'Producir una tonelada de cobre refinado consume 9.3 millones de litros de agua, equivalente a llenar 3.7 piscinas olímpicas.',
+    texto: 'Primera etapa del ciclo: extrae el mineral de cobre mediante voladura, trituración y molienda a cielo abierto a partir de bajas concentraciones.',
+    contexto: 'Concentra el mayor impacto hídrico y territorial al extraer agua de cuencas bajo estrés y alterar ecosistemas.',
+    datoClave: 'Perú es uno de los 5 mayores productores de cobre del mundo. La mina a cielo abierto más profunda del país supera los 1,000 metros.',
+    fuente: 'ICA - Perfil Medioambiental del Cobre (2023) · Northey et al. (2014)',
+    imagen: '1.jpg'
+  },
+  2: {
+    titulo: 'Cobre',
+    metrica: '>50%',
+    textoMetrica: 'Demanda global de cobre',
+    metricaExplicacion: 'Más de la mitad de la demanda mundial de cobre va a aplicaciones eléctricas, clave para aparatos e infraestructura renovable.',
+    texto: 'Tiene la mayor conductividad eléctrica entre los metales. Arequipa, Moquegua y el altiplano boliviano son polos clave para la electrificación.',
+    contexto: 'Es el recurso más crítico: su extracción y refinación dominan la carga ambiental de aparatos y proyectos solares en regiones como Arequipa.',
+    datoClave: 'Arequipa y Moquegua lideran la producción de cobre en el sur peruano. Una instalación de 1 MW de energía solar requiere aprox. 5 toneladas de cobre.',
+    fuente: 'IEA (2021) · ICA (2023)',
+    imagen: '2.jpg'
+  },
+  3: {
+    titulo: 'Aluminio',
+    metrica: '20 MWh',
+    textoMetrica: 'Energía por tonelada de aluminio',
+    metricaExplicacion: 'Producir una tonelada de aluminio primario requiere entre 17 y 20 MWh, siendo uno de los metales con mayor huella energética.',
+    texto: 'Se extrae de la bauxita. Más ligero y barato que el cobre, se emplea en carcasas de refrigeradoras, lavadoras y rotores de motores.',
+    contexto: 'Su extracción y refinación (Proceso Bayer) son muy intensivas en energía; su huella de carbono depende de cómo se genere esa electricidad.',
+    datoClave: 'El aluminio es 100% reciclable sin perder sus propiedades. Reciclarlo ahorra el 95% de la energía necesaria para producirlo desde cero.',
+    fuente: 'International Aluminium Institute · UPC',
+    imagen: '3.jpg'
+  },
+  4: {
+    titulo: 'Agua',
+    metrica: '9.3M L',
+    textoMetrica: 'Huella hídrica por tonelada',
+    metricaExplicacion: 'En el cobre, el 75% del agua dulce consumida se pierde por evaporación o contaminación; solo el 25% se recircula.',
+    texto: 'Se usa en molienda, flotación y control de polvo. Las cuencas mineras del sur andino peruano enfrentan altos niveles de estrés hídrico.',
+    contexto: 'Se contabiliza como consumo de agua azul (superficial y subterránea), compitiendo con el uso agrícola y humano en zonas áridas o altoandinas.',
+    datoClave: 'Perú es el 8° país con mayor estrés hídrico del mundo. En Arequipa, las minas del corredor sur andino consumen agua de cuencas que también abastecen a la ciudad.',
+    fuente: 'ICA (2023) · WRI (2023) · CooperAcción (2024)',
+    imagen: '4.jpg'
+  },
+  5: {
+    titulo: 'Huella Hídrica',
+    metrica: '9.3M L',
+    textoMetrica: 'Huella Hídrica Directa',
+    metricaExplicacion: 'El agua usada en la extracción y procesamiento impacta directamente las cuencas locales y genera conflictos por su uso.',
+    texto: 'Cada tonelada de cobre en un motor o panel solar arrastra una "mochila" de 9.3 millones de litros de agua desde la mina.',
+    contexto: 'Es un recurso transversal: también interviene en la fundición (enfriamiento) y en la generación eléctrica si es hidroeléctrica.',
+    datoClave: 'Reciclar cobre ahorra el 85% del agua que se necesitaría para extraerlo de la mina virgen.',
+    fuente: 'WRI (2023)',
+    imagen: '5.jpg'
+  },
+
+  6: {
+    titulo: 'Fundición\n(Proceso)',
+    metrica: '3.5 t',
+    textoMetrica: 'CO₂ por tonelada de cobre',
+    metricaExplicacion: 'Fundir y refinar cobre emite 3,558 kg de CO₂ equivalente por tonelada de cátodo, similar a manejar un auto a gasolina 14,000 km.',
+    texto: 'Convierte el concentrado en cobre blíster y luego, por refinación electroquímica, en cátodos de 99.99% de pureza para uso eléctrico.',
+    contexto: 'Es la etapa más intensiva en energía y la segunda más contaminante tras la extracción, con hornos a 1,200 °C y alto consumo eléctrico.',
+    datoClave: 'El 80% del impacto ambiental de un motor eléctrico viene de la extracción y fundición del cobre, no del uso del motor.',
+    fuente: 'ICA - Perfil Medioambiental del Cobre (2023) · de Souza et al. (2024)',
+    imagen: '6.jpg'
+  },
+  7: {
+    titulo: 'Energía',
+    metrica: 'Alto',
+    textoMetrica: 'Consumo energético',
+    metricaExplicacion: 'La electro-refinación toma 300–400 kWh/t de cátodo; sumando la fundición, el proceso completo consume entre 2,000 y 2,200 kWh/t.',
+    texto: 'Atraviesa todo el ciclo: mueve camiones y molinos en mina, funde el mineral y alimenta la electrólisis en refinación.',
+    contexto: 'En manufactura opera como impacto indirecto: es menor con matriz hidroeléctrica y mayor con generación termoeléctrica.',
+    datoClave: 'La producción de aluminio requiere 17-20 MWh por tonelada. Es el metal con mayor huella energética del ciclo.',
+    fuente: 'ICA (2023) · International Aluminium Institute',
+    imagen: '7.jpg'
+  },
+  8: {
+    titulo: 'Emisiones CO₂',
+    metrica: '3,558 kg',
+    textoMetrica: 'CO₂eq por tonelada de cátodo',
+    metricaExplicacion: 'Dato del inventario de la International Copper Association: 3,558 kg de CO₂ equivalente por tonelada de cátodo, de la cuna a la puerta.',
+    texto: 'Provienen de tres fuentes: combustibles en la fundición, electricidad en la electro-refinación y procesos químicos (SO₂).',
+    contexto: 'Se suma a la extracción para el impacto total; el 60% de las emisiones del cobre ocurre en fundición y refinación.',
+    datoClave: 'El cobre reciclado (secundario) emite solo 0.5 t de CO₂ por tonelada, un 85% menos que el cobre primario.',
+    fuente: 'ICA - Perfil Medioambiental del Cobre (2023), Tabla 1',
+    imagen: '8.jpg'
+  },
+  9: {
+    titulo: 'Motores',
+    metrica: '80%',
+    textoMetrica: 'Carga ambiental de motores',
+    metricaExplicacion: 'El 80% de la carga ambiental de un motor eléctrico ocurre al extraer y fundir cobre y aluminio, no durante su uso ni ensamblaje.',
+    texto: 'Impulsan refrigeradoras, lavadoras, bombas, ventiladores y maquinaria, combinando cobre en bobinas y aluminio en carcasa y rotores.',
+    contexto: 'Muestra que el mayor impacto sucede antes del uso doméstico, por lo que la minería urbana y el reciclaje son decisivos.',
+    datoClave: 'Cambiar la extracción virgen por cobre reciclado reduce hasta un 85% las emisiones del motor.',
+    fuente: 'de Souza et al. (2024) - Análisis de Ciclo de Vida de Motores Eléctricos',
+    imagen: '9.jpg'
+  },
+
+  10: {
+    titulo: 'Aparatos Eléctricos',
+    metrica: 'Masivo',
+    textoMetrica: 'Crecimiento del stock',
+    metricaExplicacion: 'El "stock" es el total de aparatos en los hogares; en Perú se ha más que triplicado en las últimas dos décadas.',
+    texto: 'Producto final del ciclo: refrigeradoras, lavadoras, secadoras, termas, luminarias, ventiladores y maquinaria eléctrica.',
+    contexto: 'Su expansión empuja todo el ciclo: más equipos en uso implican más cobre, fundición, electricidad y futuros RAEE.',
+    datoClave: 'Según Gusukuma et al. (2022), los hogares peruanos tienen más aparatos eléctricos que hace 20 años, pero un tercio de ellos son obsoletos.',
+    fuente: 'Gusukuma, Kahhat & Cáceres (2022) - Journal of Industrial Ecology',
+    imagen: '10.jpg'
+  },
+  11: {
+    titulo: 'Consumo Eléctrico',
+    metrica: '~93 kWh',
+    textoMetrica: 'Consumo mensual por hogar',
+    metricaExplicacion: 'Un hogar peruano consume en promedio 93 kWh/mes; una refrigeradora 24/7 aporta entre 40 y 60 kWh/mes, más de la mitad.',
+    texto: 'Durante 10–15 años de vida útil, los aparatos demandan energía a diario, con usos continuos (refrigeradora) o periódicos (lavadora, luces).',
+    contexto: 'Es un impacto indirecto generado en centrales hidroeléctricas o termoeléctricas, por lo que depende de la matriz energética.',
+    datoClave: 'Una refrigeradora peruana consume en sus 12 años de vida lo mismo que 6 meses de consumo eléctrico total de un hogar pequeño.',
+    fuente: 'Osinergmin - Anuario Estadístico de Electricidad (2024)',
+    imagen: '11.jpg'
+  },
+
+  12: {
+    titulo: 'Matriz Eléctrica',
+    metrica: '~60%',
+    textoMetrica: 'Matriz Hidroeléctrica',
+    metricaExplicacion: 'En Perú, cerca del 60% de la electricidad es hidroeléctrica, vinculando el uso de aparatos al agua de los ríos.',
+    texto: 'Define el origen de la energía doméstica: al predominar la hidroelectricidad, el consumo urbano depende de la disponibilidad hídrica andina.',
+    contexto: 'Conecta el uso (Consumo Eléctrico) con la extracción (Agua): usar aparatos en Arequipa presiona recursos hídricos del país.',
+    datoClave: 'Si la matriz eléctrica fuera más solar o eólica, el impacto indirecto del consumo de los aparatos sobre el agua sería mucho menor.',
+    fuente: 'Osinergmin · MINEM (Balance Nacional de Energía)',
+    imagen: '12.jpg'
+  },
+  13: {
+    titulo: 'Transición Energética',
+    metrica: '6×',
+    textoMetrica: 'Minerales: Renovables vs. Fósiles',
+    metricaExplicacion: 'Las energías limpias exigen 6 veces más minerales que los fósiles; un panel solar requiere entre 5 y 10 kg de cobre.',
+    texto: 'Demanda grandes volúmenes de cobre y aluminio; en Arequipa, el alto potencial solar convive con la extracción minera local.',
+    contexto: 'Genera un "efecto boomerang": descarbonizar requiere más cobre, ampliando la frontera minera en Perú y Bolivia.',
+    datoClave: 'Arequipa tiene un enorme potencial solar, lo que incrementa la demanda de cobre extraído de sus minas y de Moquegua.',
+    fuente: 'IEA - The Role of Critical Minerals (2021) · Quintero et al. (Mongabay)',
+    imagen: '13.jpg'
+  },
+
+  14: {
+    titulo: 'RAEE',
+    metrica: '62M ton',
+    textoMetrica: 'RAEE generado en 2022',
+    metricaExplicacion: 'En 2022 se generaron 62 millones de toneladas de RAEE en el mundo, un volumen que crece 2.6 millones de toneladas al año.',
+    texto: 'La obsolescencia acorta la vida útil de los aparatos y los convierte en RAEE, residuos con metales valiosos y sustancias tóxicas.',
+    contexto: 'Acelera el ciclo: reemplazar a los 8 años un equipo diseñado para 15 desaprovecha recursos extraídos para una vida mayor.',
+    datoClave: 'De los 62 millones de toneladas de RAEE generadas, solo el 22.3% se recicló formalmente. El 77.7% restante terminó en vertederos o manos informales.',
+    fuente: 'Global E-waste Monitor 2024 (UNITAR) · von Gries & Bringezu',
+    imagen: '14.jpg'
+  },
+  15: {
+    titulo: 'Informalidad',
+    metrica: '0.4%',
+    textoMetrica: 'RAEE tratado formalmente',
+    metricaExplicacion: 'En Perú, solo el 0.4% de los RAEE recibe tratamiento formal; el 99.6% va a circuitos informales, vertederos o exportación ilegal.',
+    texto: 'Es el principal problema del fin de vida en Perú: se queman cables y placas a cielo abierto y sin protección para recuperar cobre y aluminio.',
+    contexto: 'Impide mitigar el impacto del fin de vida: se pierden metales de forma segura y se suma contaminación local al ciclo.',
+    datoClave: 'Perú genera unas 200,000 toneladas de RAEE al año. Si se reciclaran formalmente, se recuperarían más de 20,000 toneladas de cobre.',
+    fuente: 'MINAM - Decreto Legislativo 1502 (2020) · Jurado & Benavides',
+    imagen: '15.jpg'
+  },
+  16: {
+    titulo: 'Contaminación',
+    metrica: 'Metales Pesados',
+    textoMetrica: 'Contaminación por quema',
+    metricaExplicacion: 'Quemar cables y placas libera dioxinas, plomo y mercurio, que se acumulan en suelos y ríos afectando la salud comunitaria.',
+    texto: 'Es efecto directo de la informalidad: sin plantas adecuadas, las quemas o lixiviados contaminan agua para riego y consumo.',
+    contexto: 'Cierra el círculo del mal manejo al final de la vida útil, dejando una deuda ambiental tóxica en ecosistemas locales.',
+    datoClave: 'Según la OMS, la exposición al plomo de los RAEE causa daños neurológicos irreversibles, especialmente en niños.',
+    fuente: 'WRI (2023) · Organización Mundial de la Salud (OMS)',
+    imagen: '16.jpg'
+  },
+  17: {
+    titulo: 'Minería Urbana',
+    metrica: '10×',
+    textoMetrica: 'Más eficiente que minería virgen',
+    metricaExplicacion: 'Recuperar una tonelada de cobre desde RAEE consume 10 veces menos energía y agua que extraerla de mina virgen.',
+    texto: 'Recupera metales de RAEE o infraestructura en desuso; una refrigeradora puede aportar cobre con ~60% de pureza frente a ~0.5% en mina.',
+    contexto: 'Cierra el ciclo al reemplazar extracción primaria por secundaria, siendo la vía más eficiente para bajar el impacto total.',
     datoClave: 'Reciclar una tonelada de RAEE de cobre evita 3.5 t de CO₂ y ahorra 9.3 millones de litros de agua.',
     fuente: 'Pascuas Rengifo - Implicaciones socioambientales de los aparatos eléctricos',
     imagen: '17.jpg'
